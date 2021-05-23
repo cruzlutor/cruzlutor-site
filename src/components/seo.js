@@ -1,9 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const SEO = () => {
+const SEO = ({ title, description }) => {
   return (
-    <Helmet>
+    <Helmet
+      title={title}
+      meta={[
+        {
+          name: 'description',
+          content: description,
+        },
+      ]}
+    >
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"

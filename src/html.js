@@ -1,5 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+config.autoAddCss = false;
 
 export default function HTML(props) {
   return (
@@ -13,7 +17,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} class="dark">
+      <body {...props.bodyAttributes} className="dark">
         {props.preBodyComponents}
         <div
           key={`body`}

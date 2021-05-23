@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from '@reach/router';
 import cx from 'classnames';
 import Container from './Container';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
@@ -11,13 +12,24 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const TransitionLink = (props) => {
+  const { pathname } = useLocation();
   return (
     <AniLink
       cover
+      to={props.to}
       duration={0.6}
-      className="md:mr-16 p-2 hover:text-heading dark:hover:text-heading-dark"
-      {...props}
-    />
+      className={
+        'md:mr-16 p-2  hover:text-heading dark:hover:text-heading-dark'
+      }
+    >
+      <FontAwesomeIcon
+        icon={props.icon}
+        className={cx('mr-4', {
+          'text-secondary dark:text-secondary-dark': pathname === props.to,
+        })}
+      />{' '}
+      {props.children}
+    </AniLink>
   );
 };
 
@@ -45,16 +57,13 @@ const Navigation = () => {
       <Container>
         <nav className="flex items-center justify-between h-20 -mx-2">
           <div className="flex items-center">
-            <TransitionLink to="/">
-              <FontAwesomeIcon icon={faHomeLgAlt} className="mr-4" />
+            <TransitionLink to="/" icon={faLayerGroup}>
               Home
             </TransitionLink>
-            <TransitionLink to="/projects">
-              <FontAwesomeIcon icon={faLayerGroup} className="mr-4" />
+            <TransitionLink to="/projects" icon={faLayerGroup}>
               Projects
             </TransitionLink>
-            <TransitionLink to="/contact">
-              <FontAwesomeIcon icon={faAddressCard} className="mr-4" />
+            <TransitionLink to="/contact" icon={faAddressCard}>
               Contact
             </TransitionLink>
           </div>
