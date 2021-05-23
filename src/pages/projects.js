@@ -36,7 +36,7 @@ const ProjectsPage = () => {
     <Layout>
       <SEO
         title="Cruzlutor: Projects"
-        description="These are some of the projects I've worked on"
+        description="These are some projects I've worked on"
       />
       <Container>
         <h1 className="font-roboto-mono text-3xl md:text-4xl mb-6 md:mb-8 text-heading dark:text-heading-dark">

@@ -1,6 +1,10 @@
 import React from 'react';
 import Navigation from './Navigation';
 import DarkToggle from './DarkToggle';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+config.autoAddCss = false;
 
 const Layout = ({ children }) => {
   return (

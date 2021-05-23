@@ -9,7 +9,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="Cruzlutor: Home"
-        description="Welcome to my personal website, I'm Luis Cruz, a Front-End Software Developer"
+        description="Welcome to my personal website, I'm Luis Cruz, a Front-End Software Developer from Colombia"
       />
       <Container>
         <div className="block md:flex items-center">
