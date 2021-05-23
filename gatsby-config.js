@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Cruzlutor",
+    title: 'Cruzlutor',
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-transition-link',
+  ],
 };
