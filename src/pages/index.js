@@ -41,24 +41,24 @@ const IndexPage = () => {
             </p>
             <a
               href="mailto:cruzlutor@gmail.com"
-              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-4"
+              className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
-              <FontAwesomeIcon icon={faEnvelope} className="mr-4" />
+              <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
               Email
             </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/cruzlutor/"
-              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-4"
+              href="https://github.com/cruzlutor"
+              className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/cruzlutor/"
-              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-4"
+              href="https://www.linkedin.com/in/cruzlutor"
+              className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -66,7 +66,7 @@ const IndexPage = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/cruzlutor"
-              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark"
+              className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark"
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
