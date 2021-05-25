@@ -8,7 +8,7 @@ import { faExternalLinkSquare } from '@fortawesome/pro-light-svg-icons';
 const Project = ({ title, description, tags, url }) => {
   return (
     <div className="p-3 w-full md:w-1/3">
-      <div className="flex flex-col h-64 bg-foreground dark:bg-foreground-dark shadow rounded-md p-5">
+      <div className="flex flex-col h-56 bg-foreground dark:bg-foreground-dark shadow rounded-md p-5">
         <h2 className="flex justify-between items-center font-bold text-heading dark:text-heading-dark mb-4">
           {title}{' '}
           <a
@@ -24,7 +24,7 @@ const Project = ({ title, description, tags, url }) => {
           </a>
         </h2>
         <p className="text-body dark:text-body-dark">{description}</p>
-        <div className="text-secondary font-roboto-mono text-xs mt-auto">
+        <div className="text-secondary dark:text-secondary-dark font-bold font-roboto-mono text-xs mt-auto">
           {tags}
         </div>
       </div>
@@ -48,6 +48,12 @@ const ProjectsPage = () => {
             description="Webapp for approval and publish content almost everywhere!"
             tags="React, Emotion, Gatsby, Redux"
             url="https://gainapp.com"
+          />
+          <Project
+            title="Cruzlutor"
+            description="This portfolio you are viewing now"
+            tags="Gatsby, Tailwind"
+            url="https://cruzlutor.com"
           />
           <Project
             title="Mofunga"

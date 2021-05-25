@@ -2,6 +2,11 @@ import * as React from 'react';
 import SEO from '../components/seo';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/pro-regular-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import profileImage from '../images/cruzlutor.png';
 
 const IndexPage = () => {
@@ -36,9 +41,34 @@ const IndexPage = () => {
             </p>
             <a
               href="mailto:cruzlutor@gmail.com"
-              className="inline-block border border-solid py-2 px-8 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark"
+              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-4"
             >
-              Contact
+              <FontAwesomeIcon icon={faEnvelope} className="mr-4" />
+              Email
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/cruzlutor/"
+              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-4"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/cruzlutor/"
+              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-4"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/cruzlutor"
+              className="inline-block border border-solid py-2 px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark"
+            >
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
           </div>
         </div>

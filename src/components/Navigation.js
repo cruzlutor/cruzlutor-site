@@ -7,9 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHomeLgAlt } from '@fortawesome/pro-regular-svg-icons';
 import { faLayerGroup } from '@fortawesome/pro-regular-svg-icons';
 import { faAddressCard } from '@fortawesome/pro-regular-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const TransitionLink = (props) => {
   const { pathname } = useLocation();
@@ -19,12 +16,12 @@ const TransitionLink = (props) => {
       to={props.to}
       duration={0.6}
       className={
-        'md:mr-16 p-2  hover:text-heading dark:hover:text-heading-dark'
+        'mr-4 md:mr-16 p-2  hover:text-heading dark:hover:text-heading-dark'
       }
     >
       <FontAwesomeIcon
         icon={props.icon}
-        className={cx('mr-4', {
+        className={cx('mr-1 md:mr-4', {
           'text-secondary dark:text-secondary-dark': pathname === props.to,
         })}
       />{' '}
@@ -57,7 +54,7 @@ const Navigation = () => {
       <Container>
         <nav className="flex items-center justify-between h-20 -mx-2">
           <div className="flex items-center">
-            <TransitionLink to="/" icon={faLayerGroup}>
+            <TransitionLink to="/" icon={faHomeLgAlt}>
               Home
             </TransitionLink>
             <TransitionLink to="/projects" icon={faLayerGroup}>
@@ -67,18 +64,6 @@ const Navigation = () => {
               Contact
             </TransitionLink>
           </div>
-
-          {/* <div className="flex text-lg">
-            <a href="#" className="block p-2 mr-2 hover:text-heading">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="#" className="block p-2 mr-2 hover:text-heading">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="#" className="block p-2 mr-2 hover:text-heading">
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </div> */}
         </nav>
       </Container>
     </div>
