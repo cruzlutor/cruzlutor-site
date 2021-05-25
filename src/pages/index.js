@@ -22,7 +22,11 @@ const IndexPage = () => {
             <div className="relative aspect-w-3 aspect-h-4">
               <div className="absolute bg-primary dark:bg-primary-dark rounded-md bottom-2 right-2 -top-2 -left-2 -z-10"></div>
               <div className="absolute bg-secondary dark:bg-secondary-dark rounded-md -right-2 -bottom-2 top-2 left-2 -z-10"></div>
-              <img src={profileImage} className="object-cover rounded-md" />
+              <img
+                src={profileImage}
+                className="object-cover rounded-md"
+                alt="Luis Cruz profile image"
+              />
             </div>
           </div>
           <div class="order-0 md:mr-40">
@@ -40,6 +44,7 @@ const IndexPage = () => {
               and UX practices.
             </p>
             <a
+              ariaLabel="Email"
               href="mailto:cruzlutor@gmail.com"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
@@ -49,6 +54,7 @@ const IndexPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
+              ariaLabel="Github"
               href="https://github.com/cruzlutor"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
@@ -57,6 +63,7 @@ const IndexPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
+              ariaLabel="LinkedIn"
               href="https://www.linkedin.com/in/cruzlutor"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
@@ -65,6 +72,7 @@ const IndexPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
+              ariaLabel="Twitter"
               href="https://twitter.com/cruzlutor"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark"
             >

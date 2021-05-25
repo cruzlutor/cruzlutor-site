@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 const SEO = ({ title, description }) => {
   return (
     <Helmet
+      lang="en"
       title={title}
       meta={[
         {
