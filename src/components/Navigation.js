@@ -16,7 +16,7 @@ const TransitionLink = (props) => {
       to={props.to}
       duration={0.6}
       className={
-        'mr-4 md:mr-16 p-2  hover:text-heading dark:hover:text-heading-dark'
+        'mr-4 md:mr-16 p-2 hover:text-heading dark:hover:text-heading-dark'
       }
     >
       <FontAwesomeIcon

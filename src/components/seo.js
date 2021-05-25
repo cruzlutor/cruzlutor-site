@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 const SEO = ({ title, description }) => {
   return (
     <Helmet
-      lang="en"
       title={title}
       meta={[
         {
@@ -13,6 +12,7 @@ const SEO = ({ title, description }) => {
         },
       ]}
     >
+      <html lang="en" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap"
