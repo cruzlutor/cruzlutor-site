@@ -24,6 +24,7 @@ const ProjectsPage = () => {
           any question feel free to reach me out.
         </p>
         <a
+          aria-label="Email"
           href="mailto:cruzlutor@gmail.com"
           className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
         >
@@ -33,6 +34,7 @@ const ProjectsPage = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Github"
           href="https://github.com/cruzlutor"
           className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
         >
@@ -41,6 +43,7 @@ const ProjectsPage = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
           href="https://www.linkedin.com/in/cruzlutor"
           className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
         >
@@ -49,6 +52,7 @@ const ProjectsPage = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Twitter"
           href="https://twitter.com/cruzlutor"
           className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark"
         >

@@ -44,7 +44,7 @@ const IndexPage = () => {
               and UX practices.
             </p>
             <a
-              ariaLabel="Email"
+              aria-label="Email"
               href="mailto:cruzlutor@gmail.com"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
@@ -54,7 +54,7 @@ const IndexPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              ariaLabel="Github"
+              aria-label="Github"
               href="https://github.com/cruzlutor"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
@@ -63,7 +63,7 @@ const IndexPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              ariaLabel="LinkedIn"
+              aria-label="LinkedIn"
               href="https://www.linkedin.com/in/cruzlutor"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark mr-3 md:mr-4"
             >
@@ -72,7 +72,7 @@ const IndexPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              ariaLabel="Twitter"
+              aria-label="Twitter"
               href="https://twitter.com/cruzlutor"
               className="inline-block border border-solid py-1 md:py-2 px-3 md:px-4 rounded-md border-primary dark:border-primary-dark text-primary dark:text-primary-dark"
             >
