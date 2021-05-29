@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/pro-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import profileImage from '../images/cruzlutor.png';
+import profileImage from '../images/cruzlutor.webp';
 
 const IndexPage = () => {
   return (
