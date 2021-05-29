@@ -1,5 +1,7 @@
 import React from 'react';
+import favicon from '../images/icon.png';
 import { Helmet } from 'react-helmet';
+import headingFont from '../static/fonts/RobotoMono-Medium.ttf';
 
 const SEO = ({ title, description }) => {
   return (
@@ -13,11 +15,13 @@ const SEO = ({ title, description }) => {
       ]}
     >
       <html lang="en" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap"
-        rel="stylesheet"
+        rel="preload"
+        crossOrigin="anonymous"
+        type="font/ttf"
+        href={headingFont}
       />
+      <link rel="icon" href={favicon} />
     </Helmet>
   );
 };
