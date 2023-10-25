@@ -56,10 +56,16 @@ const ProjectsPage = () => {
             url="https://cruzlutor.com"
           />
           <Project
-            title="Mofunga"
-            description="HTML5 gaming site"
-            tags="React, Next, Django"
-            url="https://mofunga.com"
+            title="Kalino"
+            description="Web app for animal shelters"
+            tags="React, Django, Posgresql"
+            url="https://kalino.org"
+          />
+          <Project
+            title="Lingtalk"
+            description="App for practicing languages"
+            tags="React Native, Twillio, AWS"
+            url="https://lingtalk.com"
           />
           <Project
             title="Colorstars"
